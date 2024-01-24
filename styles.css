@@ -88,6 +88,62 @@ section h1 {
   display: none;
 }
 
+/* Banner section */
+
+.banner {
+  margin-top: 60px;
+  background: url("./assets/banner.png") center top no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 450px;
+}
+
+.banner__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  color: white;
+  height: 100%;
+}
+
+.banner__info__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.banner__info__subtitle {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* Program section */
+
+.program-overview {
+  background-color: #2b2b2b;
+}
+
+.program-overview__subtitle {
+  color: white;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+
+.program-overview__more {
+  color: #00aef3;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-top: 3rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.program-overview__more:hover {
+  color: gray;
+  cursor: pointer;
+}
+
 /* Mobile version */
 
 /* For screens smaller than 992px (large tablets) */
