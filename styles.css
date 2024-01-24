@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+section h1 {
+  margin-bottom: 4rem;
+}
+
+/* Header section */
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1e1f;
+  transition: background-color 0.4s ease;
+  color: white;
+  min-height: 60px;
+  align-items: center;
+  z-index: 1000;
+}
+
+.main-header.transparent {
+  background-color: rgba(34, 34, 34, 0.95);
+}
+
+.container {
+  padding: 1rem;
+  max-width: 980px;
+  margin-inline: auto;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navigation__list a {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.navigation__list a:hover,
+.navigation__list a.active {
+  color: #00aef3;
+}
+
+.navigation__menu-btn {
+  font-size: 2rem;
+}
+
+.burger-menu {
+  display: none;
+}
+
+/* Mobile version */
+
+/* For screens smaller than 992px (large tablets) */
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* For screens smaller than 768px (small tablets) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .navigation__list {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    margin-right: 5%;
+    cursor: pointer;
+    z-index: 111;
+  }
+
+  .burger-menu div {
+    width: 50px;
+    position: relative;
+  }
+
+  .burger-menu span {
+    background: #f4f4f4;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.5s, width 0.5s;
+  }
+
+  .burger-menu .line-1 {
+    width: 50%;
+    transform: translate(0, -15px);
+    transform-origin: 100% 100%;
+  }
+
+  .burger-menu .line-3 {
+    width: 50%;
+    left: auto;
+    right: 0;
+    transform: translate(100%, 15px);
+    transform-origin: 0 0;
+  }
+
+  .navigation__list a {
+    font-size: 1.5rem;
+  }
+}
+
+/* For screens smaller than 576px (mobile phones) */
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .navigation__logo img {
+    max-width: 90%;
+  }
+}
