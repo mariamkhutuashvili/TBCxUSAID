@@ -144,6 +144,82 @@ section h1 {
   cursor: pointer;
 }
 
+/* Courses section */
+
+.courses {
+  background-color: #161616;
+}
+
+.courses__title {
+  font-size: 1.5rem;
+}
+
+.modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(15.5rem, 100%), 1fr));
+  row-gap: 1.4rem;
+  column-gap: 2.4rem;
+  grid-template-rows: 3;
+}
+
+.module {
+  background-color: #161616;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.module img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.module__info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.module__title {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+.module__desc {
+  font-size: 0.9rem;
+}
+
+.module__details {
+  padding: 3rem 1rem 2rem;
+  color: #00aef3;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.module__details::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f061";
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.module__details:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
 /* Mobile version */
 
 /* For screens smaller than 992px (large tablets) */
