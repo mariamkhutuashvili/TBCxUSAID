@@ -34,8 +34,8 @@ The technologies were chosen for their wide support and robustness, which ensure
 To run this project locally:
 
 1. Clone the repository to your local machine.
-2. Open the `index.html` file in a web browser.
-3. Explore the different sections of the website, such as the program overview, course modules, partners, and queries.
+2. Setting Up a Local Server: Due to the inclusion of ES6 modules, opening index.html directly in a web browser will not work correctly because of CORS (Cross-Origin Resource Sharing) policy restrictions. To view the project, you'll need to open the project with your prefered IDE to run a webpage with a local server.
+5. Explore the different sections of the website, such as the program overview, course modules, partners, and queries.
 
 No additional setup is required, and there is no need for a local server since the project consists of static files only. However, for production deployment, ensure to host the website on a secure web server.
 
