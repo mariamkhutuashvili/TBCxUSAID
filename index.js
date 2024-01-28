@@ -6,7 +6,7 @@ const navList = document.getElementById("navList");
 const container = document.getElementById("module-container");
 const buttons = document.querySelectorAll("button");
 const sliderContainer = document.querySelector(".partners .container");
-const sliders = document.querySelectorAll(".partners .container > div");
+const sliderCards = document.querySelectorAll(".partners .container > div");
 const leftArrow = document.getElementById("left-arrow");
 const rightArrow = document.getElementById("right-arrow");
 
@@ -50,14 +50,15 @@ moduleData.map((module) => {
   container.appendChild(moduleElement);
 });
 
-const totalSlides = sliders.length;
+const totalSlides = sliderCards.length;
 let currentSlide = 1;
 
 function showSlide(index) {
-  sliders.forEach((slider) => {
+
+  sliderCards.forEach((slider, i) => {
     slider.style.display = "none";
   });
-  sliders[index - 1].style.display = "flex";
+  sliderCards[index - 1].style.display = "flex";
 }
 
 function updateDots() {
